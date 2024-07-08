@@ -36,7 +36,12 @@ const MainSearch = () => {
     <Container>
       <Row>
         <Col>
-          <Link to="/favoriteCompany">Favorite Company</Link>
+          <Link
+            className="display-6 link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            to="/favoriteCompany"
+          >
+            Favorite Companies
+          </Link>
         </Col>
         <Col xs={10} className="mx-auto my-3">
           <h1 className="display-1">Remote Jobs Search</h1>

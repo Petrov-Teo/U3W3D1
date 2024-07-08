@@ -1,9 +1,8 @@
 import { Row, Col, Button } from "react-bootstrap";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Job = ({ data }) => {
-  const favoriteCompany = useSelector((state) => state.main.favoriteCompany);
   const dispatch = useDispatch();
 
   return (
