@@ -3,6 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Job from "./Job";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import { IncrementAcrion } from "../redux/actions";
 
 const MainSearch = () => {
   const count = useSelector((state) => state.main.count);
@@ -57,7 +58,7 @@ const MainSearch = () => {
           ))}
           <div className="d-none">
             <p className="mt-3">il valore di count è {count}</p>
-            <Button onClick={() => dispatch({ type: "INCREMENT", payload: 2 })}>incrementa</Button>
+            <Button onClick={() => dispatch(IncrementAcrion(2))}>incrementa</Button>
           </div>
         </Col>
       </Row>
